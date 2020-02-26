@@ -3,11 +3,27 @@
 /.env.local
 /.env.local.php
 /.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
-###> phpstorm ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+###> PhpStorm ###
 /.idea
-###< ###
+###< PhpStorm ###
+
+###> docker ###
+/docker/mysql/data/*
+!/docker/mysql/data/.gitkeep
+###< docker ###
+
+.DS_Store
